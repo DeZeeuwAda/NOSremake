@@ -1,0 +1,400 @@
+#MainContent .Personeelstekort .Krapte {
+    display: none;
+  }  
+  
+  #Content .P2 {
+    display: none;
+  }
+  
+  html {
+    --main-font: Roboto, sans-serif;
+    --border: #e0e0e0;
+    --btn-color: #262626;
+    --font-color: #1d1d1d;
+    --white: #fff;
+    --green: #327430;
+    --gray: #757575;
+    --light-gray-font: #626262;
+    --hover: #f9f9f9;
+  }  
+  
+  header .HeaderMobile {
+    display: none;
+  }
+  
+  header .HeaderDesktop {
+    display: none;
+  }
+  
+  
+  
+  header {
+    height: 72px;
+    background:var(--white);
+    position: fixed;
+    margin: auto;
+    box-shadow: 0px 4px 2px -2px gray;
+    top: 0px;
+    z-index: 100;
+    max-width: 1536px;
+    
+  }
+  
+  header .NOSLogo {
+    padding: 12px;
+    
+  }
+  
+  header .HeaderDesktop {
+    width: 1536px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-left: 200px;
+  }
+  
+  /* navigation */
+  
+  nav { 
+    height: 72px;
+    
+  }
+  
+  nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    text-align: left;
+    list-style-type: none;
+    
+  }
+  
+  nav li {
+    margin-left: 5px;
+    margin-right: 5px;
+  
+  
+  }
+  
+  body {
+  
+    font-family: Helvetica;
+    display: grid;
+    margin: auto;
+    max-width: 1536px;
+    
+    }
+  
+  p {
+    color: #2F2F2F;
+    font-size: 12px;
+  
+  }
+  
+    /* Positioning of the navbar */
+  nav {
+    height: 70px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: flex-start;
+    align-content: space-between;
+    width: 60%;
+    }
+  
+  .Navwrap {
+    display: flex;
+    justify-content: center;
+    align-content: left;
+    height: 30px;
+    }
+  
+  
+    /* Positioning of the two head articles */
+  #MainContent {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: -80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    grid-column-gap: 24px;
+    position:relative;
+    text-align: left;
+    color: black;
+          
+    }
+  
+  #MainContent img {
+    width: 100%;
+    padding: 12px;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 24px;
+      
+    }
+  
+  #MainContent h3 {
+    position: relative;
+    max-width: 95%;
+    top: -45%;
+    left: 5%;
+    font-size: 30px;
+    color: white;
+    text-shadow:
+      -1px 1px 0 rgba(85, 85, 85, 0.199),
+      1px 1px 0 rgba(85, 85, 85, 0.199),
+      1px -1px 0 rgba(85, 85, 85, 0.199),
+      -1px -1px 0 rgba(85, 85, 85, 0.199);
+  }
+  
+  #MainContent p {
+    max-width: 100%;
+    margin-top: -120px;
+    margin-left: 5%;
+  
+  }
+  
+  
+      
+    
+      /* Positioning of the other articles*/
+  
+  #Content {
+    margin-top: 5%;
+    margin-left: 13.5%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
+    grid-column-gap: 48px;
+    grid-row-gap: 24px;
+  
+    }
+  
+  #Content img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 150px;
+        
+    } 
+  
+  #Content h3 {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  #Content p {
+    max-width: 100%;
+    
+  }
+  
+  
+  /* responsive rules */
+  
+  @media screen and (max-width: 1333px) {
+  
+    body h3 {
+      position: relative;
+      max-width: 95%;
+      top: -200px;
+      left: 5%;
+      font-size: 30px;
+      text-shadow:
+        -1px 1px 0 rgba(85, 85, 85, 0.199),
+        1px 1px 0 rgba(85, 85, 85, 0.199),
+        1px -1px 0 rgba(85, 85, 85, 0.199),
+        -1px -1px 0 rgba(85, 85, 85, 0.199);
+  
+    }
+  }
+  
+  @media screen and (max-width: 1029px) {
+  
+    #MainContent h3 {
+      position: relative;
+      max-width: 95%;
+      top: -175px;
+      left: 5%;
+      font-size: 30px;
+      text-shadow:
+        -1px 1px 0 rgba(85, 85, 85, 0.199),
+        1px 1px 0 rgba(85, 85, 85, 0.199),
+        1px -1px 0 rgba(85, 85, 85, 0.199),
+        -1px -1px 0 rgba(85, 85, 85, 0.199);
+    }
+  
+    .NS {
+      margin-bottom: -80px;
+    }
+  
+  
+  
+  @media  screen and (max-width: 870px) { 
+      #Content .P2 {
+        display: grid;
+      }
+         
+  }
+  
+  @media screen and (max-width: 870px) {
+    #MainContent .Krapte {
+       display: grid;
+   }  
+  
+  @media screen and (max-width: 680px) {
+    header .NOSLogo {
+      margin-left: 100px;
+  
+    }
+  
+    #MainContent .Personeelstekort h3 {
+      top: -190px;
+    }
+  
+    #Content .Personeelstekort {
+        display: grid;
+    }
+  
+  }
+  
+  @media screen and (max-width: 870px) {
+    header .Uitzendingen {
+      display: none;
+    }
+    #MainContent .Personeelstekort {
+     display: none;
+  
+    }
+    #MainContent .NS {
+      margin-bottom: 10px;
+   
+     }
+  
+  }
+  
+  @media screen and (max-width: 500px) {
+  
+    #MainContent  {
+      width: 320px;
+  }
+  }
+  
+  @media screen and (max-width: 750px) {
+  
+    header .Sport {
+      display: none;
+    }
+  
+  #MainContent {
+   margin-left: 1px;
+   margin-right: 1px;
+   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  
+    }
+    
+   @media screen and (max-width: 690px) {
+    header .HeaderDesktop .NOSLogo {
+      margin-left: -170px;
+    
+   }
+  
+  @media screen and (max-width: 570px) {
+    header .HeaderDesktop .Nieuws {
+    margin-left: -350px;
+  }
+  
+   
+  
+  
+  
+  @media screen and (max-width: 360px) {
+    body {
+     background-color: #DDD;
+     
+    }
+  
+  
+   
+  
+    
+  
+   
+   
+  
+   
+  
+   #MainContent img {
+     margin-top: -23px;
+     margin-bottom: -43px;
+     margin-left: 0px;
+     margin-right: 0px;
+     width: 320px;
+     padding: 0px;
+     object-fit: cover;
+     height: 250px; 
+     border-radius: 0px;
+    }
+  
+    #MainContent h3 {
+     width: 290px;
+    }
+  
+    #Content h3 {
+     font-size: 12px;
+    }
+  
+    #Content p {
+     font-size: 10px;
+    }
+  
+    #Content {
+     display: grid;
+     grid-template-columns: repeat(2, 150px);
+     grid-template-rows: repeat(4, 1fr);
+     grid-column-gap: 5px;
+     grid-row-gap: 0px;      
+     width: 140px;
+     margin: 20px;
+    }
+  
+    #Content img {
+     object-fit: cover;
+     height: 90px;
+     width: 130px;
+     margin-right: 5px;
+      }
+  
+  
+  
+    }
+  
+    @media screen and (max-width: 319px) {
+  body {
+      background-color: rgb(59, 62, 195);
+      
+  }
+      
+      
+      #AllContent {
+              display: none;
+          }
+  
+      
+      }
+  
+  
+  @media screen and (min-width: 1920px) 
+    {
+  
+    header .Wrappermobile {
+      display: none
+    }
+    }
